@@ -62,15 +62,29 @@
     .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s cubic-bezier(.4,0,.2,1), transform .7s cubic-bezier(.4,0,.2,1); }
     .reveal.on { opacity: 1; transform: none; }
 
-    /* Button */
+    /* Button - Улучшенная адаптивность */
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
       background: #C9A962; color: #0C0B0A;
-      font-family: 'DM Sans', sans-serif; font-size: .875rem; font-weight: 700;
-      letter-spacing: .09em; text-transform: uppercase; text-decoration: none;
-      border: none; border-radius: 9999px; padding: 1rem 2.5rem; cursor: pointer;
+      font-family: 'DM Sans', sans-serif; 
+      font-size: 0.8rem; /* Уменьшено для мобильных */
+      font-weight: 700;
+      line-height: 1.2; 
+      letter-spacing: .07em; 
+      text-transform: uppercase; text-decoration: none;
+      border: none; border-radius: 9999px; 
+      padding: 1rem 1.5rem; /* Уменьшены отступы для мобильных */
+      cursor: pointer;
+      text-align: center;
       box-shadow: 0 2px 20px rgba(201,169,98,.2);
       transition: background .25s ease, transform .25s ease, box-shadow .25s ease;
+    }
+    @media(min-width:768px){ 
+      .btn { 
+        font-size: .875rem; 
+        padding: 1rem 2.5rem; 
+        letter-spacing: .09em;
+      } 
     }
     .btn:hover { background: #d4b36e; transform: translateY(-2px); box-shadow: 0 6px 32px rgba(201,169,98,.35); }
     .btn:active { transform: scale(.98); }
@@ -146,7 +160,7 @@
       Ты уже знаешь, как выстраивать сложные системы в бизнесе. Но прямо сейчас твоё собственное тело — это главное «узкое горлышко», которое тормозит рост дохода и убивает продуктивность.
     </p>
     <div class="flex justify-center md:justify-start reveal" style="transition-delay:.25s">
-      <a href="https://t.me/Shevrygin_bot?start=questionnaire" target="_blank" class="btn w-full md:w-auto">Записаться на стратегический аудит</a>
+      <a href="https://t.me/Shevrygin_bot?start=questionnaire" target="_blank" class="btn md:w-auto">Записаться на аудит</a>
     </div>
   </div>
 </section>
