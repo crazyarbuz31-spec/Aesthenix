@@ -63,7 +63,7 @@
     .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s cubic-bezier(.4,0,.2,1), transform .7s cubic-bezier(.4,0,.2,1); }
     .reveal.on { opacity: 1; transform: none; }
 
-    /* Button - Улучшенная адаптивность */
+    /* Button */
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
       background: #C9A962; color: #0C0B0A;
@@ -112,7 +112,7 @@
     .img-h { opacity:.82; transition:opacity .55s ease, transform .65s cubic-bezier(.4,0,.2,1); }
     .group:hover .img-h { opacity:1; transform:scale(1.03); }
 
-    /* FAQ — JS-driven, no <details> */
+    /* FAQ */
     .faq-body { max-height:0; overflow:hidden; opacity:0; transition:max-height .38s cubic-bezier(.4,0,.2,1), opacity .3s ease; }
     .faq-body.open { max-height:500px; opacity:1; }
     .faq-icon {
@@ -220,12 +220,10 @@
       <div class="grid md:grid-cols-12 gap-4 md:gap-10 reveal">
         <div class="md:col-span-5"><h3 class="font-serif text-lg md:text-xl text-tm leading-snug">«Я просто недисциплинированный. Проблема в силе воли.»</h3></div>
         <div class="md:col-span-7">
-          <p class="text-ts text-base leading-relaxed mb-5">Твои откаты, лишний вес и отсутствие энергии — это не сбой твоей силы воли. Это предсказуемая химическая реакция организма на программы тренировок, которые созданы студентами на стероидах, а не для предпринимателей и экспертов, управляющих масштабными проектами.</p>
-          <p class="text-ts text-base leading-relaxed mb-8">YouTube даёт информацию — но не систему. Приложение даёт трекинг — но не понимание. Абонемент даёт доступ к железу — но без техники и программы это бессмысленное блуждание между тренажёрами.</p>
-          <p class="text-tm text-base leading-relaxed font-medium mb-8">Тебе нужен другой подход.</p>
+          <p class="text-ts text-base leading-relaxed mb-5">Ты думаешь, проблема в отсутствии силы воли. На самом деле: при хроническом стрессе и недосыпе способность к самоконтролю (работа префронтальной коры) объективно снижается. Это задокументированный нейробиологический эффект, а не слабость характера.</p>
+          <p class="text-ts text-base leading-relaxed mb-8">Ты думаешь, решение — больше дисциплины и интенсивнее пахать в зале. Но стандартные фитнес-программы рассчитаны на людей с нормальным гормональным фоном. Для предпринимателя с высокой когнитивной нагрузкой классический зал работает как дополнительный стресс на уже перегруженную систему (allostatic overload). Тебе нужна выверенная доза нагрузки, а не другая сила воли.</p>
           <div class="space-y-5">
             <blockquote class="font-serif text-ts text-base md:text-lg italic">«Я ходил в зал. Но можно сказать — не ходил. Пришёл, вокруг тренажёров походил, понюхал их — и в душ.»<footer class="font-sans not-italic text-xs text-tmu mt-2 uppercase tracking-widest">— Пётр, Co-founder</footer></blockquote>
-            <blockquote class="font-serif text-ts text-base md:text-lg italic">«Смотрел на YouTube километры видосов — они все говорят абсолютно разную, взаимоисключающую информацию. Невозможно понять, что есть истина.»<footer class="font-sans not-italic text-xs text-tmu mt-2 uppercase tracking-widest">— Андрей, блогер</footer></blockquote>
           </div>
         </div>
       </div>
@@ -264,8 +262,8 @@
 <section class="py-16 md:py-24 bg-dark border-b border-bc">
   <div class="max-w-4xl mx-auto px-6 text-center reveal">
     <h2 class="text-tm text-2xl md:text-3xl lg:text-[38px] mb-6">Почему это работает, когда <em>всё остальное — нет</em></h2>
-    <p class="text-ts text-base leading-relaxed max-w-3xl mx-auto mb-5">Большинство программ требуют принятия десятков решений каждый день: что есть, как тренироваться, сколько спать. Это ещё одна задача для мозга, который и так перегружен бизнесом.</p>
-    <p class="text-tm text-base leading-relaxed max-w-3xl mx-auto font-medium">В Aesthenix — наоборот. Вы не принимаете ни одного решения по здоровью. Алгоритм, план, протокол — готовы. Ваша задача: исполнять.</p>
+    <p class="text-ts text-base leading-relaxed max-w-3xl mx-auto mb-5">Исследования показывают: при хроническом стрессе и дефиците сна когнитивные функции деградируют почти линейно. Но самое страшное — ты перестаешь это замечать. Ты думаешь, что «адаптировался» к режиму. Объективно — ты работаешь на сниженном базлайне.</p>
+    <p class="text-tm text-base leading-relaxed max-w-3xl mx-auto font-medium">Система AESTHENIX не требует от тебя строить жизнь вокруг фитнеса. Мы нормализуем циркадные ритмы, восстанавливаем гормональный паттерн и настраиваем нутриентный партиционинг (то, куда идут калории — в мышцы или в жир). Алгоритм готов. Твоя задача: исполнять.</p>
   </div>
 </section>
 
@@ -510,8 +508,8 @@
       <div class="p-7 border border-bc rounded-sm bg-s2 shadow-inner"><p class="label mb-3">«Сам разберусь»</p><p class="font-serif text-tm text-xl md:text-2xl mb-1">Бесплатно. Но:</p><p class="text-xs text-tmu mb-4">скрытые потери</p><p class="text-ts text-base leading-relaxed mb-3">6-12 месяцев проб и ошибок. Травмы. Откаты. Потерянный доход из-за низкой продуктивности.</p><p class="text-xs text-tmu border-t border-bc pt-3 italic leading-relaxed">«Я похудел сам, но ту форму, которую хотел — не сделал. Худел неправильно, потерял мышечную массу.» — Иван, IT</p></div>
     </div>
     <div class="mt-12 text-left max-w-3xl mx-auto border-l-2 border-gold/40 pl-6 reveal">
-      <p class="text-tm text-base leading-relaxed mb-3">Цена одного месяца работы вашего мозга на 60% мощности обходится бизнесу в миллионы упущенной выгоды. Инвестиция в систему AESTHENIX — это малая дробь от этой суммы, которая окупается первой же закрытой сделкой на высоком уровне энергии.</p>
-      <p class="text-ts text-base leading-relaxed mb-4">Моя система не стоит дёшево. Это персональная работа на уровне инжиниринга вашего тела. Точный формат и стоимость мы определим на аудите, только если я пойму, что готов взять вас в работу.</p>
+      <p class="text-tm text-base leading-relaxed mb-3">Ты сам знаешь цену одного неправильного стратегического решения, принятого в состоянии «тумана в голове». Я не буду придумывать цифры твоей упущенной выгоды — ты можешь посчитать их сам. Вопрос не в том, сколько это стоит твоему бизнесу. Вопрос в том, как долго ты уже работаешь в этом истощенном режиме.</p>
+      <p class="text-ts text-base leading-relaxed mb-4">Моя система не стоит дёшево. Это персональная работа на уровне инжиниринга твоего тела, основанная на доказательной медицине и биомеханике. Точный формат и стоимость мы определим на аудите, только если я пойму, что готов взять тебя в работу.</p>
       <p class="text-tm text-base leading-relaxed"><span class="gold-label font-bold">ВАЖНО:</span> Я веду клиентов лично. Мой предел — 10 человек одновременно. Сейчас свободно 2 окна. Следующий набор откроется только тогда, когда кто-то из текущих клиентов достигнет результата и выйдет из программы.</p>
     </div>
   </div>
@@ -642,11 +640,11 @@
           <div class="flex items-center gap-2 mb-3"><span class="w-2 h-2 rounded-full bg-gold"></span><p class="gold-label">Путь 2</p></div>
           <h4 class="font-serif text-tm text-xl mb-3">С AESTHENIX</h4>
           <p class="text-ts text-base leading-relaxed mb-6">Получить персональный план. За 12 недель — другое тело, другая энергия, другая уверенность. Персональная система, встроенная в твой ритм.</p>
-          <p class="text-tm text-sm leading-relaxed mb-5 border border-gold/20 rounded-sm p-4 bg-gold/[.04]">Твой персональный гайд «Питание в командировке» и индивидуальный шаблон трекинга УЖЕ зарезервированы за тобой и ждут выдачи на бесплатном разборе. Не оставляй их здесь.</p>
+          <p class="text-tm text-sm leading-relaxed mb-5 border border-gold/20 rounded-sm p-4 bg-gold/[.04]">Твоя персональная база уже зарезервирована и ждет выдачи на бесплатном разборе: <br><br>→ <b>Протокол «Питание в командировке»:</b> четкий алгоритм, как есть в ресторанах, аэропортах и на встречах, не накапливая висцеральный жир.<br>→ <b>Индивидуальный дашборд трекинга:</b> ничего лишнего, только 3 ключевые цифры в день для контроля прогресса.</p>
           <div class="space-y-3">
             <div class="flex items-center gap-2 border-t border-bc/50 pt-3"><span class="text-gold">✓</span><span class="text-ts text-base">Разбор (20-30 минут)</span></div>
             <div class="flex items-center gap-2 border-t border-bc/50 pt-3"><span class="text-gold">✓</span><span class="text-ts text-base">Шаблон трекинга</span></div>
-            <div class="flex items-center gap-2 border-t border-bc/50 pt-3"><span class="text-gold">✓</span><span class="text-ts text-base">Гайд «В командировке»</span></div>
+            <div class="flex items-center gap-2 border-t border-bc/50 pt-3"><span class="text-gold">✓</span><span class="text-ts text-base">Закрытый протокол</span></div>
           </div>
         </div>
       </div>
